@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joey Bautista Consulting</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --ink: #0a0a0a;
+    --cream: #f5f0e8;
+    --rust: #c44b2b;
+    --rule: #d4cfc4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+  }
+
+  /* Top rule + dateline */
+  .masthead {
+    border-top: 3px solid var(--ink);
+    padding-top: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .masthead span:last-child { color: var(--rust); font-weight: 500; }
+
+  /* Hero */
+  .hero {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 3rem;
+    align-items: end;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 5.2rem;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 700;
+    color: var(--rust);
+  }
+
+  .hero-aside {
+    border-left: 1px solid var(--rule);
+    padding-left: 1.75rem;
+  }
+  .hero-aside p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #3a3a3a;
+  }
+
+  /* Divider */
+  .divider {
+    margin: 3rem 0;
+    border: none;
+    border-top: 1px solid var(--rule);
+  }
+
+  /* Columns */
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  .col-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .col-label .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+  }
+  .col-text {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+  }
+
+  /* Footer CTA */
+  .cta-bar {
+    margin-top: 4rem;
+    padding: 1.75rem 0;
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cta-bar p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+  .cta-bar a {
+    display: inline-block;
+    background: var(--rust);
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.85rem 2rem;
+    transition: background 0.2s;
+  }
+  .cta-bar a:hover { background: var(--ink); }
+
+  .footer-note {
+    margin-top: 1.25rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <span>Joey Bautista Consulting</span>
+    <span>Now Accepting Clients</span>
+  </div>
+
+  <div class="hero">
+    <h1>Small Business<br><em>Strategy</em><br>& Operations</h1>
+    <div class="hero-aside">
+      <p>Fractional ops leadership for founder-led businesses doing $500K–$5M. We build the systems that let you stop firefighting and start scaling.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="cols">
+    <div>
+      <div class="col-label"><span class="num">1</span> Strategy</div>
+      <p class="col-text">Market positioning, revenue model design, and growth roadmaps grounded in real unit economics — not pitch-deck fantasy.</p>
+    </div>
+    <div>
+      <div class="col-label"><span class="num">2</span> Operations</div>
+      <p class="col-text">Process architecture, vendor management, and workflow automation. We turn chaos into repeatable systems that run without you.</p>
+    </div>
+    <div>
+      <div class="col-label"><span class="num">3</span> Execution</div>
+      <p class="col-text">Embedded support through implementation. Not a deck you'll never open — hands-on partnership until the system holds.</p>
+    </div>
+  </div>
+
+  <div class="cta-bar">
+    <p>Ready to build the machine?</p>
+    <a href="mailto:joey@example.com">Get in Touch</a>
+  </div>
+
+  <div class="footer-note">Miami, FL — Est. 2026</div>
+
+</div>
+</body>
+</html>
